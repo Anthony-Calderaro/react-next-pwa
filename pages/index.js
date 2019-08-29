@@ -1,6 +1,5 @@
-import React from 'react';
 import 'isomorphic-fetch';
-
+import Link from 'next/link'
 import Layout from '../components/Layout';
 
 export default class IndexPage extends React.Component {
@@ -18,7 +17,12 @@ export default class IndexPage extends React.Component {
         <h1> Hello !</h1>
         <p>Isn't Nextjs super cool?</p>
         {this.props.stories.map(story => (
-          <h3 key={story.url}><a href={ story.url }>{story.title}</a></h3>
+          <div key={ story.url + 123}>
+            <h3><a href={ story.url }>{ story.title }</a></h3>
+            <p><Link href={ `/story?id=${story.id}` }><a>
+              { story.comments_count } comments
+            </a></Link></p>
+          </div>
         ))}
 
         <style jsx>{`
