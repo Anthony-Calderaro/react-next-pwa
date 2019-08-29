@@ -1,0 +1,1 @@
+{"name":"react-next-pwa","version":"1.0.0","description":"","main":"index.js","scripts":{"dev":"next","start":"next start","build":"next build"},"keywords":[],"author":"","license":"ISC","dependencies":{"isomorphic-fetch":"^2.2.1","next":"^9.0.5","react":"^16.9.0","react-dom":"^16.9.0"},"readme":"ERROR: No README data found!","_id":"react-next-pwa@1.0.0"}
